@@ -1,0 +1,9 @@
+<div ng-controller="SurveyEngineController">
+    <a href="#/new-survey">Create Survey</a>
+
+    <div>
+        <div ng-repeat="assignment in model.assignments">
+            <a href="#/take-survey/{{$index}}">Take survey #{{$index + 1}}</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Survey Engine</title>
+
+    <link href="assets/css/survey-engine.css" rel="stylesheet"/>
+    <script src="assets/libs/angular.min.js"></script>
+    <script src="assets/libs/angular-resource.min.js"></script>
+    <script src="assets/libs/angular-route.min.js"></script>
+</head>
+<body>
+    <div ng-app="surveyEngine">
+        <div id="container" class="container" ng-include="'app/templates/survey-engine-main.html'">
+
+        </div>
+        <ng-view></ng-view>
+    </div>
+
+    <script src="app/app.js"></script>
+    <script src="app/controllers/survey-engine-controller.js"></script>
+    <script src="app/controllers/edit-survey-controller.js"></script>
+    <script src="app/controllers/take-survey-controller.js"></script>
+    <script src="app/services/sample-data-service.js"></script>
+    <script src="app/services/assignments-service.js"></script>
+    <script src="app/services/question-service.js"></script>
+    <!--<script src="app/services/data-service.js"></script>-->
+
+</body>
+</html>
